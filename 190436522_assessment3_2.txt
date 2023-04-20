@@ -1,0 +1,15 @@
+The data created represents the distribution of mix in east Mediterranean. 
+This data used two different data sets to depict the number of Nets distributed within each country the number of Nets available in each country and the population within each country.
+
+To begin with commodity distribution was imported as a file and labelled as commodity’s using the read.delim function. 
+The data from the commodity file was then filtered down by the region and categorised as the by group using countries. The data was then transformed into a Pablo using the gg plot function to label the X&Y axes and divide by 1,000,000 to better represent the number of Nets within the data. I then specified the plot as a column pchart using the ggplot function. The Y axis was then labelled as numbers of Nets in millions As using the coord_flip function to flip the X&Y axes on the plot.
+
+
+For the second plot i used the number of LLINs delivered as the x axis and the percentage of population with access as the Y axis. 
+I then converted the data into a scatter plot to depict the concentration of access in specific country’s. I then use the labs function to label the X&Y axes.
+
+The funnel data set was imported with the population size cases data plot and then named as CDM.
+CDM was filtered by the east Mediterranean region and grouped into countries and labelled as a POP variant. The data was divided by 1,000,000 and summarise to represent the data more appropriately.
+GGplot was then used to map the x and y axis and geom_col to create columns. I then label the X&Y axis with labs function. To flip the columns I used coord_flip. Finally I used the theme function finally I use the same function accompanied with text axes text an title to remove the Y coordinate heading.
+
+To present all the plots together I use the plot layout function by adding all the plots together on the variable an creating two columns as well as annotating the plot using plot_annotation to create a title subtitle and caption. 
